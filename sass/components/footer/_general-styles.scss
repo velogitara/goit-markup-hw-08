@@ -1,0 +1,10 @@
+.footer-section {
+    background-color: $footer-bcg-color;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    color: $primary-text-color;
+}
+
+.footer-section__container {
+    @include centeredFlex($align-item: baseline, $jfc: space-between);
+}

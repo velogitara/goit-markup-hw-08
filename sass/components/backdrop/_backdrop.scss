@@ -1,0 +1,131 @@
+// ..............................коментарий...........................................
+.feedback__comment {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16;
+
+    letter-spacing: 0.01em;
+
+    color: getColor('secondary-text-color');
+
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    transition: transform 250ms $cubic;
+}
+
+.input:focus-within .feedback__comment {
+    transform: translate(-13px, -35px);
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__label {
+    padding-top: 12px;
+    padding-left: 16px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+    &:hover,
+    &:focus {
+        border-color: getColor('active-color');
+    }
+    &:not(:placeholder-shown) + .feedback__comment {
+        transform: translate(-13px, -35px);
+    }
+}
+
+.form-field.comment {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    text-align: center;
+
+    letter-spacing: 0.03em;
+
+    color: getColor('secondary-text-color');
+}
+.comment {
+    @include centeredFlex;
+    position: relative;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.comment__checkbox {
+    /* appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none; */
+    border: none;
+
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.comment__icon {
+    display: inline-block;
+    margin-right: 7px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    transition: background-color 250ms $cubic, border-color 250ms $cubic;
+}
+
+.comment__checkbox:checked + .comment__icon {
+    border-color: getColor('active-color');
+    background-color: getColor('active-color');
+}
+
+.linkCondition {
+    color: getColor('active-color');
+    text-decoration: underline;
+    margin-left: 3px;
+}
+
+.form .feedback__label {
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 120px;
+}
+
+.input {
+    position: relative;
+    margin-top: 30px;
+}
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+.form__svg {
+    fill: #212121;
+
+    transition: fill 250ms $cubic;
+}
+
+.input:focus-within .form__svg {
+    fill: getColor('active-color');
+}

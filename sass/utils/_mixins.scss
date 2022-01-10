@@ -1,0 +1,12 @@
+@mixin centeredFlex($type: flex, $align-item: center, $jfc: center) {
+    display: $type;
+    align-items: $align-item;
+    justify-content: $jfc;
+}
+
+@mixin buttonBasic($bcgc: $active-color, $color: $white-color) {
+    background-color: $bcgc;
+    color: $color;
+    cursor: pointer;
+    border-radius: 4px;
+}

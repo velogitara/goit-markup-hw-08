@@ -1,0 +1,14 @@
+.section-header {
+    background-color: var(--white-color);
+    padding-bottom: 0;
+    padding-top: 0;
+    border-bottom: 1px solid #ececec;
+}
+
+.site-nav {
+    @include centeredFlex($jfc: space-between);
+}
+
+// display: flex;
+//     align-items: center;
+//     justify-content: space-between;
