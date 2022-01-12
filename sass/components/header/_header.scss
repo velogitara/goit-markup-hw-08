@@ -1,4 +1,6 @@
 .section-header {
+    position: relative;
+
     background-color: var(--white-color);
     padding-bottom: 0;
     padding-top: 0;
@@ -9,6 +11,24 @@
     @include centeredFlex($jfc: space-between);
 }
 
-// display: flex;
-//     align-items: center;
-//     justify-content: space-between;
+.header-container {
+    padding: 15px 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-nav__container {
+    display: none;
+
+    position: absolute;
+    // outline: 1px solid red;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    background-color: getColor('white-color');
+    &.nav-menu--is-open {
+        display: block;
+    }
+}

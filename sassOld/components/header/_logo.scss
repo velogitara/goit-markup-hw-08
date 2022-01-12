@@ -1,0 +1,7 @@
+.logo {
+    color: $active-color;
+    @extend %logo-style;
+}
+.logo--color-modify {
+    color: $primary-text-color;
+}

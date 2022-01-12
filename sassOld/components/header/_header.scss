@@ -1,0 +1,17 @@
+.section-header {
+    background-color: var(--white-color);
+    padding-bottom: 0;
+    padding-top: 0;
+    border-bottom: 1px solid #ececec;
+}
+
+.site-nav {
+    @include centeredFlex($jfc: space-between);
+}
+
+.header-container {
+    width: 480px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
