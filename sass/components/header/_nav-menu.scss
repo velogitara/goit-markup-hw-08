@@ -29,8 +29,11 @@
 }
 
 .nav-menu__button {
+    position: absolute;
+    top: 11px;
+    right: 26px;
+    z-index: 10;
     display: inline-flex;
-    margin-left: auto;
 
     fill: getColor('primary-text-color');
     @extend %button-style-reset;
@@ -45,8 +48,7 @@
     display: none;
     .nav-menu__button.nav-menu--is-open & {
         display: inline-block;
-        z-index: 90;
-        position: absolute;
+
         top: 11px;
         right: 26px;
     }

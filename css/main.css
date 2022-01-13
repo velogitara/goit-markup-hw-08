@@ -422,10 +422,13 @@ textarea {
 }
 
 .nav-menu__button {
+  position: absolute;
+  top: 11px;
+  right: 26px;
+  z-index: 10;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: auto;
   fill: #212121;
 }
 
@@ -439,8 +442,6 @@ textarea {
 
 .nav-menu__button.nav-menu--is-open .nav-menu__cross {
   display: inline-block;
-  z-index: 90;
-  position: absolute;
   top: 11px;
   right: 26px;
 }
