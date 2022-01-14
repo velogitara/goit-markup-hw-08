@@ -1,6 +1,6 @@
 .nav-menu {
     color: $primary-text-color;
-
+    margin-left: 40px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -66,24 +66,27 @@
 .site-nav__socials {
     display: flex;
     margin-top: 64px;
+    margin-left: 40px;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.2;
 
     letter-spacing: 0.02em;
-
-    color: getColor('active-color');
 
     @media screen and(min-width: 768px) {
         display: none;
     }
 }
 
-.site-nav__link:not(:last-child) {
-    padding-right: 10px;
+.site-nav__item:not(:last-child) {
+    padding-right: 8px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
-.site-nav__link:not(:first-child) {
-    margin-left: 10px;
+.site-nav__item:not(:first-child) {
+    margin-left: 8px;
+}
+
+.site-nav__link {
+    color: getColor('active-color');
 }

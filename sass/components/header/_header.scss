@@ -19,9 +19,10 @@
 
 .site-nav__container {
     opacity: 0;
-    // padding-left: 40px;
+
     padding-top: 48px;
     padding-bottom: 48px;
+    box-sizing: border-box;
 
     position: absolute;
     // outline: 1px solid red;

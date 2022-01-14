@@ -1,4 +1,41 @@
 .our-concept-section {
     background-color: getColor('white-color');
-    padding-top: 94px;
+    padding-top: 60px;
+    align-items: center;
+}
+
+.our-concept__icon-container {
+    @include centeredFlex;
+    margin-bottom: 30px;
+
+    border-radius: 4px;
+    background-color: $secondary-bcg-color;
+    width: 100%;
+    height: 120px;
+}
+.our-concept__item:not(:first-child) {
+    margin-top: 30px;
+}
+
+.our-concept__subtitle {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.our-concept__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $secondary-text-color;
+}
+
+.our-concept__text--padding {
+    @media screen and(max-width:767px) {
+        padding-bottom: 60px;
+    }
 }
