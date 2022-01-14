@@ -4,12 +4,17 @@
 //     margin-top: calc(-1 * 30px);
 //     margin-left: calc(-1 * 30px);
 // }
-.thumbList.list > .thumbList__element {
+.thumbList__element {
     // flex-basis: calc(100% / 3 - 30px);
-    margin-top: $card-set-gap;
-    margin-left: $card-set-gap;
+    // margin-top: $card-set-gap;
+    // margin-left: $card-set-gap;
 
     transition: box-shadow 250ms $cubic;
+    @media screen and(max-width:767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
 }
 .thumbList__element:focus,
 .thumbList__element:hover {
@@ -39,7 +44,9 @@
     border-left: 1px solid getColor('primary-bcg-color');
     border-right: 1px solid getColor('primary-bcg-color');
 }
-
+.thumbList__img {
+    width: 100%;
+}
 .thumbList__imgContainer {
     position: relative;
     overflow: hidden;

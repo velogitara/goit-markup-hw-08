@@ -2,7 +2,7 @@
     display: flex;
     // flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     margin-bottom: 50px;
 }
 .buttonFilter__list {
@@ -35,4 +35,7 @@
 }
 .buttonFilter li:not(:last-child) {
     margin-right: 8px;
+}
+.buttonFilter li:nth-child(-n + 3) {
+    margin-bottom: 15px;
 }
