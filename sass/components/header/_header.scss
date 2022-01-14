@@ -1,10 +1,11 @@
 .section-header {
-    position: relative;
-
     background-color: var(--white-color);
     padding-bottom: 0;
     padding-top: 0;
     border-bottom: 1px solid #ececec;
+    @media screen and(max-width:767px) {
+        position: relative;
+    }
 }
 
 .site-nav {
@@ -19,21 +20,27 @@
 
 .site-nav__container {
     background-color: getColor('white-color');
-    padding: 48px 40px;
-    box-sizing: border-box;
 
-    position: absolute;
-    // outline: 1px solid red;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    z-index: 1;
+    @media screen and(max-width:767px) {
+        padding: 48px 40px;
+        box-sizing: border-box;
 
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: opacity 250ms $cubic, transform 250ms $cubic;
-    &.nav-menu--is-open {
-        opacity: 1;
-        transform: translateY(0);
+        width: 100%;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: opacity 250ms $cubic, transform 250ms $cubic;
+        &.nav-menu--is-open {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media screen and(min-width:768px) {
+        display: flex;
     }
 }
