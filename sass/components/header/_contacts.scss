@@ -1,1 +1,33 @@
+.contact-list {
+    margin-top: 302px;
+}
+.contact-list__item:nth-child(2) {
+    margin-top: 32px;
+}
 
+.contact-list__link {
+    @media screen and(max-width: 767px) {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: getColor('secondary-text-color');
+    }
+}
+
+.contact-list__link--phone-color {
+    @media screen and(max-width: 767px) {
+        color: getColor('focus-color');
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+    }
+}
+
+.contact-list__icon {
+    @media screen and(max-width:767px) {
+        display: none;
+    }
+}

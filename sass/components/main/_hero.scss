@@ -1,15 +1,38 @@
-// .section-hero {
-//     padding-top: 0;
-//     padding-bottom: 0;
-//     max-width: 1600px;
-//     background-color: #c4c4c4;
-//     // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//     //     url('../images/bcg--hero.jpg');
-// }
+.section-hero {
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: 1600px;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/bcg--hero.jpg');
+}
 
-// .hero {
-//     text-align: center;
+.hero {
+    text-align: center;
 
-//     padding-top: 200px;
-//     padding-bottom: 200px;
-// }
+    padding-top: 118px;
+    padding-bottom: 128px;
+}
+
+.hero__title {
+    color: getColor('white-color');
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.hero__button {
+    @include buttonBasic;
+    text-align: center;
+    padding: 10px 32px;
+    border: transparent;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+}

@@ -22,14 +22,26 @@
                     <a href="##" class="logo"
                         >Web<span class="logo logo--color-modify">Studio</span></a
                     >
-                    <button type="button" class="nav-menu__button" aria-expanded="false" data-menu-button>
-                        <svg width="40" height="40" aria-controls="site-nav__container" aria-label="переключатель мобильного меню">
+                    <button
+                        type="button"
+                        class="nav-menu__button"
+                        aria-expanded="false"
+                        data-menu-button
+                    >
+                        <svg
+                            width="40"
+                            height="40"
+                            aria-controls="site-nav__container"
+                            aria-label="переключатель мобильного меню"
+                        >
                             <use
                                 class="nav-menu__burger"
                                 href="./images/sprite.svg#menu_40px"
                             ></use>
-                            <use class="nav-menu__cross" 
-                            href="./images/sprite.svg#close_40px"></use>
+                            <use
+                                class="nav-menu__cross"
+                                href="./images/sprite.svg#close_40px"
+                            ></use>
                         </svg>
                     </button>
                     <div class="site-nav__container" id="site-nav__container" data-menu>
@@ -48,9 +60,18 @@
                                 <a href="" class="nav-menu__link">Контакты</a>
                             </li>
                         </ul>
-                        
-                        </button>
+
                         <ul class="contact-list">
+                            <li class="contact-list__item">
+                                <a
+                                    href="tel:+380961111111"
+                                    class="contact-list__link contact-list__link--phone-color"
+                                    ><svg class="contact-list__icon" width="10" height="16">
+                                        <use href="./images/sprite.svg#icon-icon-phone"></use>
+                                    </svg>
+                                    +38 096 111 11 11</a
+                                >
+                            </li>
                             <li class="contact-list__item">
                                 <a href="mailto:info@devstudio.com" class="contact-list__link">
                                     <svg class="contact-list__icon" width="16" height="12">
@@ -60,14 +81,12 @@
                                     info@devstudio.com</a
                                 >
                             </li>
-                            <li class="contact-list__item">
-                                <a href="tel:+380961111111" class="contact-list__link"
-                                    ><svg class="contact-list__icon" width="10" height="16">
-                                        <use href="./images/sprite.svg#icon-icon-phone"></use>
-                                    </svg>
-                                    +38 096 111 11 11</a
-                                >
-                            </li>
+                        </ul>
+                        <ul class="site-nav__socials">
+                            <li class="site-nav__link">Instagram</li>
+                            <li class="site-nav__link">Twitter</li>
+                            <li class="site-nav__link">Facebook</li>
+                            <li class="site-nav__link">LinkedIn</li>
                         </ul>
                     </div>
                 </nav>
@@ -586,7 +605,7 @@
             </div>
         </div>
         <!-- ------------------ modal window ends ------------------ -->
-          <script src="./js/menu.js"></script>
+        <script src="./js/menu.js"></script>
         <script src="./js/modal.js"></script>
     </body>
 </html>
