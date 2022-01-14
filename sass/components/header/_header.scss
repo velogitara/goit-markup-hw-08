@@ -18,22 +18,23 @@
 }
 
 .site-nav__container {
-    opacity: 0;
-
+    background-color: getColor('white-color');
     padding-top: 48px;
     padding-bottom: 48px;
     box-sizing: border-box;
 
     position: absolute;
     // outline: 1px solid red;
-    top: 0;
+    top: 100%;
     left: 0;
     width: 100%;
     z-index: 1;
 
-    background-color: getColor('white-color');
-    transition: opacity 250ms $cubic;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 250ms $cubic, transform 250ms $cubic;
     &.nav-menu--is-open {
         opacity: 1;
+        transform: translateY(0);
     }
 }

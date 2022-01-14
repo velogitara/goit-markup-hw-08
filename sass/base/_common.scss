@@ -13,6 +13,9 @@ body {
     color: var(--primary-text-color);
     background-color: var(--white-color);
 }
+body.modal-open {
+    overflow: hidden;
+}
 .list {
     margin-top: 0;
     margin-bottom: 0;

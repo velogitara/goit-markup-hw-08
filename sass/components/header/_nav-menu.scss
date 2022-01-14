@@ -47,16 +47,21 @@
 }
 
 .nav-menu__burger {
+    transform: scale(1);
+    opacity: 1;
     .nav-menu__button.nav-menu--is-open & {
         opacity: 0;
-        transition: opacity 250ms $cubic;
+        transform: scale(0.1);
+        transition: opacity 250ms $cubic, transform 250ms $cubic;
     }
 }
 .nav-menu__cross {
     opacity: 0;
-    transition: opacity 250ms $cubic;
+    transform: scale(0.1);
+    transition: opacity 250ms $cubic, transform 250ms $cubic;
     .nav-menu__button.nav-menu--is-open & {
         opacity: 1;
+        transform: scale(1);
 
         top: 11px;
         right: 26px;

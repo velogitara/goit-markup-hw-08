@@ -1,0 +1,52 @@
+.modalSend {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.modalSend__button {
+    padding: 10px 55px;
+    border: none;
+    background-color: getColor('active-color');
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    color: getColor('white-color');
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+
+    transition: background-color 250ms $cubic, translate 250ms $cubic;
+    transform-style: preserve-3d;
+
+    &:hover {
+        background-color: getColor('btn-shadow-color');
+    }
+
+    &:focus {
+        background-color: getColor('btn-shadow-color');
+    }
+    &:active {
+        background-color: getColor('btn-shadow-color');
+        transform: translate(0, 0.05em);
+    }
+}
+
+/* .send-mdl-btn::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--active-color);
+    border-radius: inherit;
+    box-shadow: 0 0.625em 0 0 #beadfc49;
+    transform: translate3d(0, 0.25em, -1em);
+    transition: transform 0.15s, box-shadow 0.15s;
+} */

@@ -1,0 +1,61 @@
+.form-window {
+    @include centeredFlex;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.form__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+
+    color: getColor('primary-text-color');
+}
+
+.form__input {
+    padding-left: 35px;
+    border-color: rgba(33, 33, 33, 0.2);
+
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+
+    font-family: inherit;
+
+    transition: border-color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+        border-color: getColor('active-color');
+    }
+    &:not(:placeholder-shown) + .form__label {
+        transform: translate(-30px, -35px);
+    }
+}
+
+.form__label {
+    position: absolute;
+    top: 55%;
+    left: 35px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16px;
+
+    letter-spacing: 0.01em;
+
+    color: getColor('secondary-text-color');
+
+    transition: color 250ms $cubic, transform 250ms $cubic;
+}
+
+.input:focus-within .form__label {
+    transform: translate(-30px, -35px);
+}
