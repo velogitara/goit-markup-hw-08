@@ -6,9 +6,14 @@
 }
 
 .subscribeSection__container {
-    // display: flex;
-    // flex-direction: column;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include for-tablet-landscape {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
     margin-top: 20px;
 }
 
