@@ -23,6 +23,10 @@
     height: 92px;
     margin: 15px;
     flex-basis: calc((100% - 2 * 30px) / 2);
+
+    @include for-tablet-landscape {
+        flex-basis: calc((100% - 3 * 30px) / 3);
+    }
 }
 .clients__svg {
     fill: $icon-silent-color;

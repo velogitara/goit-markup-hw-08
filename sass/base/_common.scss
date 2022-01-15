@@ -61,12 +61,14 @@ textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-// .section {
-//     padding-bottom: 94px;
-//     padding-top: 94px;
-//     margin-left: auto;
-//     margin-right: auto;
-// }
+.section {
+    @media screen and(min-width:1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .container {
     @media screen and(min-width:480px) {
         width: 480px;

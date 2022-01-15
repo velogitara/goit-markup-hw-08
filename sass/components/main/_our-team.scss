@@ -11,6 +11,28 @@
     line-height: 1.16;
     text-align: center;
     color: $primary-text-color;
+    @include for-tablet-landscape {
+        font-size: 36px;
+    }
+}
+
+.ourTeam__list {
+    @include for-tablet-landscape {
+        @include centeredFlex($jfc: space-between);
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+}
+
+.ourTeam__item {
+    @include for-mobile-only {
+        margin-bottom: 30px;
+    }
+    @include for-tablet-landscape {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+    }
 }
 
 .ourTeam__description {
@@ -79,8 +101,4 @@
 .ourTeam__icon {
     fill: $icon-silent-color;
     transition: fill 250ms $cubic;
-}
-
-.ourTeam__item {
-    margin-bottom: 30px;
 }
