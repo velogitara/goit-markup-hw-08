@@ -27,6 +27,9 @@
     @include for-tablet-landscape {
         flex-basis: calc((100% - 3 * 30px) / 3);
     }
+    @include for-desktop {
+        flex-basis: calc((100% - 6 * 30px) / 6);
+    }
 }
 .clients__svg {
     fill: $icon-silent-color;

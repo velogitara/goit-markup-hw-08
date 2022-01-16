@@ -28,6 +28,18 @@
     }
 }
 
+@mixin for-tablet-landscape-up {
+    @media screen and(max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape-only {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
 @mixin for-desktop {
     @media screen and(min-width: 1200px) {
         @content;
