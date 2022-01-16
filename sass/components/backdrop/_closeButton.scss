@@ -20,7 +20,7 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
 
-        transform: translate(-50%, -30%) scale(1) perspective(400px) rotateX(0);
+        transform: translate(-50%, -50%) scale(1) perspective(400px) rotateX(0);
     }
 
     @include for-desktop {
