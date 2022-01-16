@@ -22,9 +22,11 @@
 
         transform: translate(-50%, -30%) scale(1) perspective(400px) rotateX(0);
     }
+
     @include for-desktop {
         top: 50%;
         left: 50%;
+        transform: translate(-50%, -50%) scale(1) perspective(400px) rotateX(0);
     }
 
     transition: transform 1000ms $cubic, rotate 1000ms $cubic 500ms;

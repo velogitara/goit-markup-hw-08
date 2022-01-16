@@ -8,14 +8,23 @@
         align-items: flex-start;
         justify-content: space-between;
     }
+    @include for-desktop {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 330px;
+    }
 }
 .contact-list__item:nth-child(2) {
     @media screen and(max-width: 767px) {
         margin-top: 32px;
     }
 
-    @media screen and(min-width: 768px) {
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 10px;
+    }
+
+    @include for-desktop {
+        margin-left: 30px;
     }
 }
 

@@ -1,6 +1,8 @@
 .backdrop {
     @include for-mobile-only {
         padding: 94px 15px;
+    }
+    @media screen and (min-width: 320px) {
         overflow-y: scroll;
     }
     position: fixed;
