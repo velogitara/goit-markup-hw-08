@@ -346,6 +346,8 @@ textarea {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -358,8 +360,6 @@ textarea {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -1645,6 +1645,8 @@ input[type='text']::placeholder {
 @media screen and (max-width: 767px) {
   .modal {
     padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     max-width: 450px;
   }
@@ -1653,15 +1655,21 @@ input[type='text']::placeholder {
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
-    top: 33%;
+    top: 50%;
     left: 50%;
-    overflow-y: scroll;
     width: 528px;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    -webkit-transform: translate(-50%, -50%) scale(1) perspective(400px) rotateX(0);
-            transform: translate(-50%, -50%) scale(1) perspective(400px) rotateX(0);
+    -webkit-transform: translate(-50%, -30%) scale(1) perspective(400px) rotateX(0);
+            transform: translate(-50%, -30%) scale(1) perspective(400px) rotateX(0);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 50%;
+    left: 50%;
   }
 }
 

@@ -1,24 +1,30 @@
 .modal {
     background-color: getColor('white-color');
+
     @include for-mobile-only {
         padding: 40px;
-
+        margin-left: auto;
+        margin-right: auto;
         position: relative;
         max-width: 450px;
     }
 
     @include for-tablet-landscape {
         position: absolute;
-        top: 33%;
+        top: 50%;
         left: 50%;
-        overflow-y: scroll;
+
         width: 528px;
 
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
 
-        transform: translate(-50%, -50%) scale(1) perspective(400px) rotateX(0);
+        transform: translate(-50%, -30%) scale(1) perspective(400px) rotateX(0);
+    }
+    @include for-desktop {
+        top: 50%;
+        left: 50%;
     }
 
     transition: transform 1000ms $cubic, rotate 1000ms $cubic 500ms;

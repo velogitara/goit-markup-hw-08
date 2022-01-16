@@ -72,6 +72,8 @@ textarea {
 .container {
     @media screen and(min-width:480px) {
         width: 480px;
+        margin-left: auto;
+        margin-right: auto;
     }
     @media screen and(min-width:768px) {
         width: 768px;
@@ -80,7 +82,5 @@ textarea {
 
     @media screen and(min-width: 1200px) {
         width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
