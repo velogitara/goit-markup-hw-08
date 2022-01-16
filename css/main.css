@@ -1244,6 +1244,7 @@ textarea {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    text-align: start;
   }
 }
 
@@ -1425,8 +1426,6 @@ textarea {
 
 .subscribeSection__input {
   padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1443,6 +1442,8 @@ textarea {
 @media screen and (max-width: 1199px) {
   .subscribeSection__input {
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -1462,7 +1463,10 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-width: 358px;
+    min-width: 300px;
+    height: 40px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
   }
 }
 
