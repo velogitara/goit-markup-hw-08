@@ -10,6 +10,8 @@
 
 .thumbList__element {
     @include for-tablet-landscape {
+        display: flex;
+        flex-direction: column;
         flex-basis: calc((100% - 2 * 30px) / 2);
         margin: 15px;
     }
@@ -43,6 +45,9 @@
     margin-bottom: 4px;
 }
 .thumbList__description {
+    // display: flex;
+    // flex-direction: column;
+    // flex-grow: 1;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.875;
@@ -50,6 +55,7 @@
 }
 
 .filter-list-description {
+    flex-grow: 1;
     padding: 20px 24px;
     border-bottom: 1px solid getColor('primary-bcg-color');
     border-left: 1px solid getColor('primary-bcg-color');
