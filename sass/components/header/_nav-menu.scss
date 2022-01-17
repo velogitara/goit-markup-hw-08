@@ -65,6 +65,14 @@
             background-color: $active-color;
         }
     }
+    @include for-tablet-landscape {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        &--current::after {
+            content: '';
+            top: 77px;
+        }
+    }
 }
 
 .nav-menu__item:not(:last-child) {

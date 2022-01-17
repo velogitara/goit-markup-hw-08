@@ -1,13 +1,24 @@
-// .thumbList {
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin-top: calc(-1 * 30px);
-//     margin-left: calc(-1 * 30px);
-// }
+.thumbList {
+    @include for-tablet-landscape {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    // margin-top: calc(-1 * 30px);
+    // margin-left: calc(-1 * 30px);
+}
+
 .thumbList__element {
-    // flex-basis: calc(100% / 3 - 30px);
-    // margin-top: $card-set-gap;
-    // margin-left: $card-set-gap;
+    @include for-tablet-landscape {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+    }
+    @include for-desktop {
+        flex-basis: calc((100% - 3 * 30px) / 3);
+        margin: 15px;
+        // margin-top: $card-set-gap;
+        // margin-left: $card-set-gap;
+    }
 
     transition: box-shadow 250ms $cubic;
     @media screen and(max-width:767px) {
