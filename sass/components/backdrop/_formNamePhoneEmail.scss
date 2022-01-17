@@ -16,6 +16,10 @@
     letter-spacing: 0.03em;
 
     color: getColor('primary-text-color');
+
+    @include for-tablet-landscape-up {
+        text-align: center;
+    }
 }
 
 .form__input {
@@ -58,4 +62,7 @@
 
 .input:focus-within .form__label {
     transform: translate(-30px, -35px);
+    @include for-mobile-only {
+        color: getColor('active-color');
+    }
 }

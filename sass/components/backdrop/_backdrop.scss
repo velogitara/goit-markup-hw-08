@@ -17,6 +17,9 @@
 
 .input:focus-within .feedback__comment {
     transform: translate(-13px, -35px);
+    @include for-mobile-only {
+        color: getColor('active-color');
+    }
 }
 
 .feedback {
@@ -48,13 +51,16 @@
     margin-top: 20px;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 11px;
     line-height: 1.714;
     text-align: center;
 
     letter-spacing: 0.03em;
 
     color: getColor('secondary-text-color');
+    @include for-tablet-landscape {
+        font-size: 14px;
+    }
 }
 .comment {
     @include centeredFlex;
