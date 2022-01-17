@@ -23,6 +23,7 @@
 
 .subscribeSection__input {
     padding-left: 16px;
+    color: getColor('white-color');
 
     @include for-tablet-landscape-up {
         width: 100%;
