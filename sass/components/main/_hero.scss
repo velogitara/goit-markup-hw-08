@@ -1,18 +1,30 @@
 .section-hero {
     padding-top: 0;
     padding-bottom: 0;
-    width: 100%;
+    // width: 100%;
+    background-color: #c4c4c4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../../images/background-image/mobile-min.jpg');
+
+    @include for-tablet-landscape {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../../../images/background-image/tablet-min.jpg');
+    }
 
     @include for-desktop {
         max-width: 1600px;
-        width: 100%;
-        height: 600px;
+        // width: 100%;
+        // height: 600px;
 
         background-color: #c4c4c4;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url('../../../images/background-image/desktop-min.jpg');
 
-        background-size: 1600px 600px;
+        // background-size: 1600px 600px;
     }
 }
 
@@ -20,10 +32,22 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .section-hero {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../../../images/background-image/mobile@2x-min.jpg');
+
+        @include for-tablet-landscape {
+            background-image: linear-gradient(
+                    to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                url('../../../images/background-image/tablet@2x-min.jpg');
+        }
+
         @include for-desktop {
             max-width: 1600px;
-            width: 100%;
-            height: 600px;
+            // width: 100%;
+            // height: 600px;
             background-color: #c4c4c4;
             background-image: linear-gradient(
                     to right,
@@ -31,7 +55,7 @@
                     rgba(47, 48, 58, 0.4)
                 ),
                 url('../../../images/background-image/desktop@2x-min.jpg');
-            background-size: 1600px 600px;
+            // background-size: 1600px 600px;
         }
     }
 }
