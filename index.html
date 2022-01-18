@@ -179,7 +179,28 @@
                     <ul class="examples__list">
                         <li>
                             <div class="examples__thumb">
-                                <img src="./images/box1.jpg" alt="набирает код" width="370" />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/boxes/boxOneDesktop.webp    1x,
+                                            ./images/boxes/boxOneDesktop@2x.webp 2x
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/boxes/boxOneDesktop.jpg    1x,
+                                            ./images/boxes/boxOneDesktop@2x.jpg 2x
+                                        "
+                                        type="image/jpeg"
+                                    />
+                                    <img
+                                        src="./images/boxes/boxOneDesktop.jpg"
+                                        alt="набирает код"
+                                        width="370"
+                                    />
+                                </picture>
+
                                 <div class="examples__descPosition">
                                     <p class="examples__description">Десктопные приложения</p>
                                 </div>
@@ -187,11 +208,28 @@
                         </li>
                         <li>
                             <div class="examples__thumb">
-                                <img
-                                    src="./images/box2.jpg"
-                                    alt=" делает оптимизацию к мобильным устройствам"
-                                    width="370"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/boxes/boxTwoDesktop.webp    1x,
+                                            ./images/boxes/boxTwoDesktop@2x.webp 2x
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/boxes/boxTwoDesktop.jpg    1x,
+                                            ./images/boxes/boxTwoDesktop@2x.jpg 2x
+                                        "
+                                        type="image/jpeg"
+                                    />
+                                    <img
+                                        src="./images/boxes/boxTwoDesktop.jpg"
+                                        alt="делает оптимизацию к мобильным устройствам"
+                                        width="370"
+                                    />
+                                </picture>
+
                                 <div class="examples__descPosition">
                                     <p class="examples__description">Мобильные приложения</p>
                                 </div>
@@ -199,7 +237,28 @@
                         </li>
                         <li>
                             <div class="examples__thumb">
-                                <img src="./images/box3.jpg" alt="выбор цветовой гаммы" />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/boxes/boxThreeDesktop.webp    1x,
+                                            ./images/boxes/boxThreeDesktop@2x.webp 2x
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/boxes/boxThreeDesktop.jpg    1x,
+                                            ./images/boxes/boxThreeDesktop@2x.jpg 2x
+                                        "
+                                        type="image/jpeg"
+                                    />
+                                    <img
+                                        src="./images/boxes/boxThreeDesktop.jpg"
+                                        alt="выбор цветовой гаммы"
+                                        width="370"
+                                    />
+                                </picture>
+
                                 <div class="examples__descPosition">
                                     <p class="examples__description">Дизайнерские решения</p>
                                 </div>
@@ -214,7 +273,64 @@
                     <h2 class="ourTeam__title">Наша команда</h2>
                     <ul class="ourTeam__list list">
                         <li class="ourTeam__item">
-                            <img src="./images/OurTeam1.jpg" alt="фото Игорь Демьяненко" />
+                            <picture>
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/team/teamOne/450x460mobile.webp    1x,
+                                        ./images/team/teamOne/450x460mobile@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                        ./images/team/teamOne/270x260desktop.webp    1x,
+                                        ./images/team/teamOne/270x260desktop@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./images/team/teamOne/354x374tablet.webp    1x,
+                                        ./images/team/teamOne/354x374tablet@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./images/team/teamOne/354x374tablet.jpg    1x,
+                                        ./images/team/teamOne/354x374tablet@2x.jpg 2x
+                                    "
+                                    type="image/jpeg"
+                                />
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                        ./images/team/teamOne/270x260desktop.jpg    1x,
+                                        ./images/team/teamOne/270x260desktop@2x.jpg 2x
+                                    "
+                                    type="image/jpeg"
+                                />
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/team/teamOne/450x460mobile.jpg    1x,
+                                        ./images/team/teamOne/450x460mobile@2x.jpg 2x
+                                    "
+                                    type="image/jpeg"
+                                />
+
+                                <img
+                                    src="./images/team/teamOne/450x460mobile.jpg"
+                                    alt="фото Игорь Демьяненко"
+                                />
+                            </picture>
+
                             <div class="ourTeam__description">
                                 <h3 class="ourTeam__name">Игорь Демьяненко</h3>
                                 <p class="ourTeam__career">Product Designer</p>
@@ -253,7 +369,62 @@
                             </div>
                         </li>
                         <li class="ourTeam__item">
-                            <img src="./images/OurTeam2.jpg" alt="фото Ольга Репина" />
+                            <picture>
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                        ./images/team/teamtwo/270x260desktop.webp    1x,
+                                        ./images/team/teamtwo/270x260desktop@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                        ./images/team/teamtwo/270x260desktop.jpg    1x,
+                                        ./images/team/teamtwo/270x260desktop@2x.jpg 2x
+                                    "
+                                    type="image/jpeg"
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./images/team/teamtwo/354x374tablet.webp    1x,
+                                        ./images/team/teamtwo/354x374tablet@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./images/team/teamtwo/354x374tablet.jpg    1x,
+                                        ./images/team/teamtwo/354x374tablet@2x.jpg 2x
+                                    "
+                                    type="image/jpeg"
+                                />
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/team/teamtwo/450x460mobile.webp    1x,
+                                        ./images/team/teamtwo/450x460mobile@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/team/teamtwo/450x460mobile.jpg    1x,
+                                        ./images/team/teamtwo/450x460mobile@2x.jpg 2x
+                                    "
+                                    type="image/jpeg"
+                                />
+
+                                <img
+                                    src="./images/team/teamtwo/450x460mobile.jpg"
+                                    alt="фото Ольга Репина"
+                                />
+                            </picture>
+
                             <div class="ourTeam__description">
                                 <h3 class="ourTeam__name">Ольга Репина</h3>
                                 <p class="ourTeam__career">Frontend Developer</p>
@@ -292,7 +463,62 @@
                             </div>
                         </li>
                         <li class="ourTeam__item">
-                            <img src="./images/OurTeam3.jpg" alt="фото Николай Тарасов" />
+                            <picture>
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                        ./images/team/teamthree/270x260desktop.webp    1x,
+                                        ./images/team/teamthree/270x260desktop@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                        ./images/team/teamthree/270x260desktop.jpg    1x,
+                                        ./images/team/teamthree/270x260desktop@2x.jpg 2x
+                                    "
+                                    type="image/jpeg"
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./images/team/teamthree/354x374tablet.webp    1x,
+                                        ./images/team/teamthree/354x374tablet@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./images/team/teamthree/354x374tablet.jpg    1x,
+                                        ./images/team/teamthree/354x374tablet@2x.jpg 2x
+                                    "
+                                    type="image/jpeg"
+                                />
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/team/teamthree/450x460mobile.webp    1x,
+                                        ./images/team/teamthree/450x460mobile@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/team/teamthree/450x460mobile.jpg    1x,
+                                        ./images/team/teamthree/450x460mobile@2x.jpg 2x
+                                    "
+                                    type="image/jpeg"
+                                />
+
+                                <img
+                                    src="./images/team/teamthree/450x460mobile.jpg"
+                                    alt="фото Николай Тарасов"
+                                />
+                            </picture>
+
                             <div class="ourTeam__description">
                                 <h3 class="ourTeam__name">Николай Тарасов</h3>
                                 <p class="ourTeam__career">Marketing</p>
@@ -332,7 +558,61 @@
                         </li>
                         <li class="ourTeam__item">
                             <div class="ourTeam__photo">
-                                <img src="./images/OurTeam4.jpg" alt="фото Михаил Ермаков" />
+                                <picture>
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                            ./images/team/teamfour/270x260desktop.webp    1x,
+                                            ./images/team/teamfour/270x260desktop@2x.webp 2x
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                            ./images/team/teamfour/270x260desktop.jpg    1x,
+                                            ./images/team/teamfour/270x260desktop@2x.jpg 2x
+                                        "
+                                        type="image/jpeg"
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/team/teamfour/354x374tablet.webp    1x,
+                                            ./images/team/teamfour/354x374tablet@2x.webp 2x
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/team/teamfour/354x374tablet.jpg    1x,
+                                            ./images/team/teamfour/354x374tablet@2x.jpg 2x
+                                        "
+                                        type="image/jpeg"
+                                    />
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/team/teamfour/450x460mobile.webp    1x,
+                                            ./images/team/teamfour/450x460mobile@2x.webp 2x
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/team/teamfour/450x460mobile.jpg    1x,
+                                            ./images/team/teamfour/450x460mobile@2x.jpg 2x
+                                        "
+                                        type="image/jpeg"
+                                    />
+
+                                    <img
+                                        src="./images/team/teamfour/450x460mobile.jpg"
+                                        alt="фото Михаил Ермаков"
+                                    />
+                                </picture>
                             </div>
                             <div class="ourTeam__description">
                                 <h3 class="ourTeam__name">Михаил Ермаков</h3>

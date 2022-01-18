@@ -117,11 +117,65 @@
                     <ul class="thumbList list">
                         <li class="thumbList__element">
                             <div class="thumbList__imgContainer">
-                                <img
-                                    src="./images/portfolio/img-first.jpg"
-                                    alt="laptop"
-                                    class="thumbList__img"
-                                />
+                                <picture>
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/team/teamOne/450x460mobile.webp    1x,
+                                            ./images/team/teamOne/450x460mobile@2x.webp 2x
+                                        "
+                                        type="image/webp"
+                                    />
+
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                            ./images/team/teamOne/270x260desktop.webp    1x,
+                                            ./images/team/teamOne/270x260desktop@2x.webp 2x
+                                        "
+                                        type="image/webp"
+                                    />
+
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/team/teamOne/354x374tablet.webp    1x,
+                                            ./images/team/teamOne/354x374tablet@2x.webp 2x
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/team/teamOne/354x374tablet.jpg    1x,
+                                            ./images/team/teamOne/354x374tablet@2x.jpg 2x
+                                        "
+                                        type="image/jpeg"
+                                    />
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                            ./images/team/teamOne/270x260desktop.jpg    1x,
+                                            ./images/team/teamOne/270x260desktop@2x.jpg 2x
+                                        "
+                                        type="image/jpeg"
+                                    />
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/team/teamOne/450x460mobile.jpg    1x,
+                                            ./images/team/teamOne/450x460mobile@2x.jpg 2x
+                                        "
+                                        type="image/jpeg"
+                                    />
+
+                                    <img
+                                        src="./images/portfolio/img-first.jpg"
+                                        alt="laptop"
+                                        class="thumbList__img"
+                                    />
+                                </picture>
+
                                 <div class="thumbList__descriptionContainer">
                                     <p class="thumbList__description">
                                         Технокряк это современная площадка распространения
