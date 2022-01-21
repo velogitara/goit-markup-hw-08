@@ -132,9 +132,13 @@
 
 .site-nav__box {
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    min-height: 100%;
+    align-items: center;
+    @include for-mobile-only {
+        flex-wrap: wrap;
+        align-content: space-between;
+        min-height: 100%;
+        max-width: 450px;
+    }
 }
 .site-nav__socials {
     display: flex;
