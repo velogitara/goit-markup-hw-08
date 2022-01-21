@@ -430,6 +430,7 @@ textarea {
             box-sizing: border-box;
     max-width: 767px;
     width: 100vw;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -620,6 +621,17 @@ textarea {
   right: 26px;
 }
 
+.site-nav__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  min-height: 100%;
+}
+
 .site-nav__socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -649,10 +661,6 @@ textarea {
 
 .site-nav__link {
   color: #2196f3;
-}
-
-.contact-list {
-  margin-top: 302px;
 }
 
 @media screen and (min-width: 768px) {
