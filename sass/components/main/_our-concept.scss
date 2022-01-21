@@ -12,9 +12,9 @@
 }
 
 .our-concept__container {
-    padding-bottom: 60px;
-    padding-top: 60px;
-    @include for-tablet-landscape {
+    @media screen and (max-width: 1199px) {
+        padding-bottom: 60px;
+        padding-top: 60px;
     }
 }
 .our-concept {

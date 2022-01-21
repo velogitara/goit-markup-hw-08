@@ -1,13 +1,17 @@
-.portfolio-section {
-    padding-top: 94px;
-}
+// .portfolio-section {
+
+// }
 
 .main-portfolio-section {
     background-color: getColor('white-color');
 
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 60px;
+
+    @include for-tablet-landscape-up {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
     @media screen and(min-width:1200px) {
         width: 1200px;

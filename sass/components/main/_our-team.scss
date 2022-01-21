@@ -1,19 +1,23 @@
 .ourTeam {
     background-color: $secondary-bcg-color;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @include for-tablet-landscape-up {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .ourTeam__title {
-    margin-bottom: 30px;
+    @include for-tablet-landscape-up {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    margin-bottom: 50px;
     font-weight: 700;
-    font-size: 28px;
+
+    font-size: 36px;
     line-height: 1.16;
     text-align: center;
     color: $primary-text-color;
-    @include for-tablet-landscape {
-        font-size: 36px;
-    }
 }
 
 .ourTeam__list {
@@ -66,7 +70,7 @@
 .ourTeam__socials {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0 32px;
     margin-top: 16px;
 }

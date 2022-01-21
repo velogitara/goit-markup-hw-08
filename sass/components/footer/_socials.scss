@@ -1,14 +1,16 @@
-.footerSocial {
-    @media screen and(min-width:1200px) {
-        margin-left: 70px;
-    }
-}
+// .footerSocial {
+//     @media screen and(min-width:1200px) {
+//         margin-left: 70px;
+//     }
+// }
 .footerSocial__title {
+    @include for-tablet-landscape-up {
+        text-align: center;
+    }
     color: $white-color;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
 
     text-transform: uppercase;
 }
